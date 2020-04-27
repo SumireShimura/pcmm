@@ -13,50 +13,50 @@
         // () => {}
         // =SUM(A1:A2) ※A1=3 A2=4
 
-        // const addTwoNum = (x,y) => {
-        //   return x + y;
-        // };
-        // console.log(addTwoNum(3,4));
+        const addTwoNum = (x,y) => {
+          return x + y;
+        };
+        console.log(addTwoNum(3,4));
 
         //クラスとは
-        // class Calculator {
-        //     constructor(x,y) {
-        //         this.x = x;
-        //         this.y = y;
-        //     }
-        //     addTwoNum() {
-        //         return this.x + this.y;
-        //     }
-        // }
+        class Calculator {
+            constructor(x,y) {
+                this.x = x;
+                this.y = y;
+            }
+            addTwoNum() {
+                return this.x + this.y;
+            }
+        }
 
-        // const Calu = new Calculator(3,4); //インスタンス生成
-        // console.log(Calu.addTwoNum());
+        const Calu = new Calculator(3,4); //インスタンス生成
+        console.log(Calu.addTwoNum());
 
-        // const CalcA = new Calculator(3,4); //7と出力
-        // const CalcB = new Calculator(1,1); //2と出力
-        // console.log(CalcA.addTwoNum());　
-        // console.log(CalcB.addTwoNum());
+        const CalcA = new Calculator(3,4); //7と出力
+        const CalcB = new Calculator(1,1); //2と出力
+        console.log(CalcA.addTwoNum());　
+        console.log(CalcB.addTwoNum());
 
         // classの継承
-// 　　　　class SuperNaming{
-//           constructor(){
-//               this.name = "田中";
-//           }
-//           outputName(){
-//               return this.name;
-//           }
-//         }
+　　　　class SuperNaming{
+          constructor(){
+              this.name = "田中";
+          }
+          outputName(){
+              return this.name;
+          }
+        }
         
-//         class SubGreeting extends SuperNaming{
-//             outputName(){
-//                 return super.outputName() + "太郎";
-//             }
-//             outputHello(){
-//                 return "Hello!!";
-//             }
-//         }
-//         const Greeting = new SubGreeting;
-//         console.log(Greeting.outputHello() + Greeting.outputName());
+        class SubGreeting extends SuperNaming{
+            outputName(){
+                return super.outputName() + "太郎";
+            }
+            outputHello(){
+                return "Hello!!";
+            }
+        }
+        const Greeting = new SubGreeting;
+        console.log(Greeting.outputHello() + Greeting.outputName());
         
 //練習問題
 class Naming{
